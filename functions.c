@@ -61,7 +61,7 @@ int print_string(va_list types, char buffer[],
 			write(1, &str[0], length);
 			for (i = width - length; i > 0; i--)
 				write(1, " ", 1);
-			vi functions.cvi
+			return (width);
 		}
 		else
 		{
@@ -124,7 +124,7 @@ int print_int(va_list types, char buffer[],
 	buffer[BUFF_SIZE - 1] = '\0';
 	num = (unsigned long int)n;
 
-
+	if (n < 0)
 	{
 		num = (unsigned long int)((-1) * n);
 		is_negative = 1;
