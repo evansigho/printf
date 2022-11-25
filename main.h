@@ -47,10 +47,9 @@ int handle_print(const char *fmt, int *i,
 
 /* Funtions to print chars and strings */
 int print_char(va_list types, char buffer[],
-	int flags, int width, int precision, int size);
-int print_string(va_list types, char buffer[]
-		;
-	int flags, int width, int precision, int size);
+		int flags, int width, int precision, int size);
+int print_string(va_list types, char buffer[],
+		int flags, int width, int precision, int size);
 int print_percent(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 
